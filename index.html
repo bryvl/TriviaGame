@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+    <div class="start">
+        <h1>Just a Dog Trivia Game</h1>
+        <h2 id="timer">Timer: </h2>
+        <h4>What Kind of Dog is this?</h4>
+        <img src="assets/images/beagle.jpg" height="150" width="200">
+        <div>
+            <input class="answer" type="radio" id="gr" name="q1" value="false" checked>
+            <label for="gr">Golden Retriever</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="shitzu" name="q1" value="false">
+            <label for="shitzu">Shitzu</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="poodle" name="q1" value="false">
+            <label for="poodle">Poodle</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="beagle" name="q1" value="true">
+            <label for="beagle">Beagle</label>
+        </div>
+        <h4>The First Domesticated Dog is Widely Accepted as Having Been the Gray Wolf. AKA?</h4>
+        <div>
+            <input class="answer" type="radio" id="grandum" name="q2" value="false" checked>
+            <label for="grandum">Canis Grandum</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="balto" name="q2" value="false">
+            <label for="balto">Balto</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="canis" name="q2" value="true">
+            <label for="canis">Canis Lupus</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="gris" name="q2" value="false">
+            <label for="gris">Lupus Gris</label>
+        </div>
+        <h4>What famous yoga move is inspired by dogs?</h4>
+        <div>
+            <input class="answer" type="radio" id="crescent" name="q3" value="false" checked>
+            <label for="crescent">High Lunge Crescent Variation</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="cat" name="q3" value="false">
+            <label for="cat">Cat Pose</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="upward" name="q3" value="false">
+            <label for="upward">Upward- Facing Dog</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="downward" name="q3" value="true">
+            <label for="downward">Downward-Facing Dog</label>
+        </div>
+        <h4>Complete this lyric: "I love ___, the ___ ___ dog"</h4>
+        <div>
+            <input class="answer" type="radio" id="cg" name="q4" value="false" checked>
+            <label for="cg">Canis Grandum, first, domesticated</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="clifford" name="q4" value="true">
+            <label for="clifford">Clifford, big, red</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="patrick" name="q4" value="false">
+            <label for="patrick">Patrick Swayze, medically, profficient</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="brax" name="q4" value="false">
+            <label for="brax">Braxtonshire III, Imperial Courts, Guard</label>
+        </div>
+        <h4>What Kind of Dog is this?</h4>
+        <img src="assets/images/Pomeranian.jpg" width="200" height="150">
+        <div>
+            <input class="answer" type="radio" id="pomeranian" name="q5" value="true" checked>
+            <label for="pomeranian">Pomeranian</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="pomski" name="q5" value="false">
+            <label for="pomski">Pomski</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="shepherd" name="q5" value="false">
+            <label for="shepherd">German Shepherd</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="pomegranate" name="q5" value="false">
+            <label for="pomegranate">Pomegranate</label>
+        </div>
+        <h4>In the Air Bud series, what kind of dog is Buddy?</h4>
+        <div>
+            <input class="answer" type="radio" id="american" name="q6" value="false" checked>
+            <label for="american">American Jack Terrier</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="samoyed" name="q6" value="true">
+            <label for="samoyed">Golden Retriever</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="can" name="q6" value="false">
+            <label for="can">Canis</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="grand" name="q6" value="false">
+            <label for="grand">Grandum</label>
+        </div>
+        <h4>What Kind of Dog is this?</h4>
+        <img src="assets/images/lamp_dog.jpg" width="200" height="150">
+        <div>
+            <input class="answer" type="radio" id="american" name="q7" value="false" checked>
+            <label for="american">American Jack Terrier</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="samoyed" name="q7" value="false">
+            <label for="samoyed">Samoyed</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="clamp" name="q7" value="true">
+            <label for="clamp">Canis Lampum, The First Domesticated Lamp</label>
+        </div>
+        <div>
+            <input class="answer" type="radio" id="chihuahua" name="q7" value="false">
+            <label for="Chihuaha">Chihuaha?</label>
+        </div>
+        <h4>You and I are now dawgs.</h4>
+        <div>
+            <input class="answer" type="radio" id="true" name="q8" value="true">
+            <label for="true">true</label>
+        </div>
+        <div>
+            <input type="radio" id="false" name="q8" value="false">
+            <label for="false">false</label>
+        </div>
+        <button id="finishQuiz" type="submit">Done!</button>
+    </div>
+</body>

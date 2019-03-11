@@ -1,0 +1,11 @@
+body {
+    background-image: url('../images/boof.png');
+    background-repeat: repeat;
+
+}
+.start {
+    background-color: #aa7755;
+    width: 550px;
+    margin: 0 auto;
+    padding: 15px;
+}
