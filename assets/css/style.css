@@ -9,3 +9,11 @@ body {
     margin: 0 auto;
     padding: 15px;
 }
+/* Button */
+
+
+/* End of Game */
+.results {
+    background-color: white;
+    color: red;
+}

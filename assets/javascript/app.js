@@ -1,4 +1,28 @@
 $(document).ready(function() {
+    var count = 0;
+    var time = 120;
+    var intervalID = setInterval(timer, 100);
+    var correctCount = 0;
+    var wrongCount = 0;
+
+
+
+    function timer() {
+        $("#timer").html("Timer: " + time + " seconds left");
+        var resultsDiv = $('<div class="results">');
+        var correctDiv = $('<p id="correct">');
+        var wrongDiv = $('<p id="correct">');
+
+
+        if (time === 0) {
+
+            clearInterval(intervalID);
+            time = 5;
+            resultsDiv.text("Time's Up!");
+            $('#timer').html(resultsDiv);
+        }
+        time--;
+    };
 	
 // 	var question1 = {
 // 		text: "What is your Name?", 
@@ -131,23 +155,7 @@ $(document).ready(function() {
 // });
 
 
-// function timer() {
-// 	$("#timer h1").html("00:0"+time);
-// 	$("#timer").css('visibility', 'inherit');
 
-// 	if (time === 0) {
-
-// 		$("#snarf").css('background', '#D9534F');
-// 		clearInterval(intervalID);
-// 		time = 5;
-// 		questionBank[count].correct = "AAAAAAAAGHHHHH! [is cast into the gorge by an invisible force]";
-// 		count++;
-// 		setTimeout(function() {
-// 			checkGameEnd();		
-// 		}, 600);
-// 	}
-// 	time--;
-// };
 
 
 
